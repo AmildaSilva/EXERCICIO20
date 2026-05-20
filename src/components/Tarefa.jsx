@@ -37,7 +37,7 @@ const TarefaItem = styled.div`
 `
 
 export default function Tarefa({ tarefa, excluir, aoAlternarConcluida }) {
-  // Proteção: se tarefa for undefined, não renderiza nada
+
   if (!tarefa) return null
 
   return (

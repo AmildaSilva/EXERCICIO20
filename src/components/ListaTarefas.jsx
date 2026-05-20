@@ -23,7 +23,7 @@ function ListaTarefas() {
         return resposta.json()
       })
    .then(dados => {
-        // MockAPI já retorna id, não precisa mapear _id
+        
         setTarefas(Array.isArray(dados)? dados : [])
       })
    .catch(error => {

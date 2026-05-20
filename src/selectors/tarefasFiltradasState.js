@@ -18,8 +18,7 @@ export const tarefasFiltradasState = selector({
       const statusOk =
         filtroStatus === 'todas' ||
         (filtroStatus === 'concluidas' && tarefa.concluida) ||
-        (filtroStatus === 'pendentes' && !tarefa.concluida) // <-- espaço aqui
-
+        (filtroStatus === 'pendentes' && !tarefa.concluida) 
       const textoOk = tarefa.texto.toLowerCase().includes(filtroTexto.toLowerCase())
 
       return statusOk && textoOk
